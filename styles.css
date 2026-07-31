@@ -38,8 +38,27 @@ label {
     font-weight: bold;
 }
 
-input {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
+input [type=number]{
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
 }
+
+.gender {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 255, 55);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
