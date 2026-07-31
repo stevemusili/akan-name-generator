@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color:#e5f7f4;
+    background-color:#050505;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -35,5 +35,11 @@ p {
 label {
     display: block;
     margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
     font-weight: bold;
 }
