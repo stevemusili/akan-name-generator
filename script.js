@@ -28,7 +28,7 @@ document.getElementById("nameform").addEventListener("submit", function(e){
         return;
     }
 
-    const date = new Date(day, month - 1, year);
+    const date = new Date(year, month - 1, day);
 
     if (
         date.getDate() !== day ||
@@ -75,4 +75,15 @@ document.getElementById("nameform").addEventListener("submit", function(e){
         dayOfWeek += 7;
     }
 
+    let akanName = "";
+
+    if (gender.value === "male"){
+        akanName = maleNames[dayOfWeek];
+    } else {
+        akanName = femaleNames[dayOfWeek];
+    }
+
+    document.getElementById("result").innerHTML = 
+    `You were born on <strong>${days[dayOfWeek]}</strong>.<br> 
+    Your Akan name is <strong>${akanName}</strong>.`;
 });
