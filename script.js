@@ -12,7 +12,24 @@ document.getElementById("nameform").addEventListener("submit", function(e){
     const year = parseInt(document.getElementById("year").value);
 
     const gender = document.querySelector('input[name="gender"]:checked');
+
+    if (day < 1 || day > 31) {
+        alert("Please enter a valid day.");
+        return;
+    }
+
+    if (month < 1 || month > 12) {
+        alert("Please enter a valid month.");
+        return;
+    }
+
+    if (!gender) {
+        alert("Please select your gender.");
+        return;
+    }
+
     
+
 
 
 });
