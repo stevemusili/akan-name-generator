@@ -39,6 +39,40 @@ document.getElementById("nameform").addEventListener("submit", function(e){
         return;
     }
 
+    const CC = Math.floor(year / 100);
+    const YY = year % 100;
 
+    let MM = month;
+
+
+    if (MM === 1){
+        MM = 13;
+    }
+
+    if (MM === 2) {
+        MM = 14;
+    }
+
+    let adjustedYear = year;
+
+    if (month === 1 || month === 2) {
+        adjustedYear--;    
+    }
+
+    const adjCC = Math.floor(adjustedYear / 100)
+    const adjYY = adjustedYear % 100;
+
+    let dayOfWeek = (
+        Math.floor(adjCC / 4)
+        - 2 * adjCC
+        - 1
+        + Math.floor((5 * adjYY) / 4)
+        + Math.floor((26 * (MM + 1)) / 10)
+        + day
+    ) % 7;
+
+    if (dayOfWeek < 0) {
+        dayOfWeek += 7;
+    }
 
 });
