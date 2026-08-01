@@ -28,7 +28,16 @@ document.getElementById("nameform").addEventListener("submit", function(e){
         return;
     }
 
-    
+    const date = new Date(day, month - 1, year);
+
+    if (
+        date.getDate() !== day ||
+        date.getMonth() !== month - 1 ||
+        date.getFullYear() !== year
+    ) {
+        alert("Invalid date.");
+        return;
+    }
 
 
 
