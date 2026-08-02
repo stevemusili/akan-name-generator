@@ -15,7 +15,7 @@ https://github.com/stevemusili/akan-name-generator.git
 3. Open index.html on your browser.
 
 ## BDD (Behavior-Driven Development)
->  | Behaviour | Input | Output |
+>  | Behavior | Input | Output |
 1. | Enter valid birthday | 29/2/2024 Male| Yaw |
 2. | Enter invalid month | 13 | Alert |
 3. | Enter invalid day | 35 | Alert |
