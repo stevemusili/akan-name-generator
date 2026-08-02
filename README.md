@@ -7,7 +7,7 @@ A web application that calculates the day of the week a user was born and assign
 Steve Musili
 
 ## Set-up Instructions
-1. Git clone the repository
+1. Git clone the repository on your terminal
 https://github.com/stevemusili/akan-name-generator.git
 
 2. Access the project folder.
