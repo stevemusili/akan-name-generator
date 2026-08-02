@@ -28,6 +28,7 @@ document.getElementById("nameform").addEventListener("submit", function(e){
         return;
     }
 
+    // Check if date actually exists
     const date = new Date(year, month - 1, day);
 
     if (
@@ -39,12 +40,13 @@ document.getElementById("nameform").addEventListener("submit", function(e){
         return;
     }
 
+    // Calculate century and year
     const CC = Math.floor(year / 100);
     const YY = year % 100;
 
     let MM = month;
 
-
+    // January and February adjustment
     if (MM === 1){
         MM = 13;
     }
@@ -62,6 +64,7 @@ document.getElementById("nameform").addEventListener("submit", function(e){
     const adjCC = Math.floor(adjustedYear / 100)
     const adjYY = adjustedYear % 100;
 
+    // Calculate day of the week
     let dayOfWeek = (
         Math.floor(adjCC / 4)
         - 2 * adjCC
