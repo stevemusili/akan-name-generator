@@ -32,7 +32,7 @@ Github: https://https://github.com/stevemusili
 Email: musilisteve223@gmail.com
 
 ## Link to Live Site
-
+https://stevemusili.github.io/akan-name-generator/
 
 ## License 
 Copyright (C) 2026 Steve Musili
