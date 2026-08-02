@@ -6,7 +6,6 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 document.getElementById("nameform").addEventListener("submit", function(e){
     e.preventDefault();
-    console.log("Form submitted!");
 
     const day = parseInt(document.getElementById("day").value);
     const month = parseInt(document.getElementById("month").value);
