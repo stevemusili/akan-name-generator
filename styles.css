@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Poppins", sans-serif;
+    font-family:'Poppins';
 }
 
 /* body */
@@ -10,14 +12,13 @@ body {
     background-color: #faf5eb;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 /* container */
 .container {
+    margin: 20px;
     background-color: white;
-    width: 500px;
+    width: 600px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 2)
@@ -31,7 +32,7 @@ h1 {
 
 p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 17px;
 }
 
@@ -39,21 +40,22 @@ p {
 #nameform {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
 }
 
-label {
-    display: block;
-    margin-top: 15px;
+#nameform label {
+    font-size: 16px;
     font-weight: bold;
 }
 
-input [type=number]{
-    margin-top: 5px;
-    width: 100%;
-    padding: 10px;
+#nameform input {
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #009739;
 }
+
 
 /* gender */
 .gender {
@@ -63,7 +65,7 @@ input [type=number]{
 }
 
 /* button */
-button {
+#nameform button {
     margin-top: 20px;
     width: 100%;
     padding: 10px;
@@ -72,11 +74,11 @@ button {
     color: black;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
 }
 
-button:hover {
+#nameform button:hover {
     background-color: darkgoldenrod;
 }
 
